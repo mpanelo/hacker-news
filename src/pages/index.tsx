@@ -1,4 +1,4 @@
-import * as api from "@hackernews/core/api";
+import * as api from "@hacker-news/core/api";
 import { GetServerSideProps } from "next";
 import Image from "next/image";
 import Link from "next/link";

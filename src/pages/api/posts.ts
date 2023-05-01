@@ -1,4 +1,4 @@
-import * as api from "@hackernews/core/api";
+import * as api from "@hacker-news/core/api";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 export interface Response<T> {

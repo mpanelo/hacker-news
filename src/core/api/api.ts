@@ -1,4 +1,4 @@
-import { get } from "@hackernews/core/http";
+import { get } from "@hacker-news/core/http";
 
 const hackernewsUrl = "https://hacker-news.firebaseio.com/v0";
 
