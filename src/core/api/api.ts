@@ -10,6 +10,9 @@ export interface Item {
   score: number;
   url: string;
   by: string;
+  time: number;
+  kids: number[];
+  descendants?: number;
 }
 
 export async function topStories({ top }: { top: number }) {
@@ -22,7 +25,6 @@ export async function topStories({ top }: { top: number }) {
   const items: Item[] = [];
   for (const id of itemIds) {
     const { data } = await item(id);
-
     items.push(data);
   }
 
