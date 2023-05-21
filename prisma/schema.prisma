@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model schema_migrations {
+  version BigInt  @id
+  dirty   Boolean
+}
+
+model stories {
+  id          Int      @id
+  type        String
+  by          String
+  time        DateTime @db.Timestamptz(0)
+  kids        Int[]
+  url         String
+  score       Int
+  title       String
+  descendants Int
+}
